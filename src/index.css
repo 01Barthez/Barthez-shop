@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  @apply scroll-pt-10 scroll-smooth
+}
+
+.nav_input{
+  @apply text-dark dark:text-light dark:bg-gray-900 dark:border-gray-500 w-56 group-hover:w-60 md:w-60 md:group-hover:w-75 text-sm sm:text-base rounded-full border border-gray-300 px-4 py-1 focus:outline-none focus:border-2 focus:border-primary dark:focus:border-secondary transition-all duration-200;
+}
+
+.bg_pattern{
+  @apply select-none absolute -top-1/2  -right-1/4 sm:right-0 rotate-45 z-[1] h-[28rem] w-[28rem] sm:h-[33rem] sm:w-[33rem] rounded-3xl bg-primary3  dark:bg-secondary3 flex items-center justify-center text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary3;
+}
+
+.bg_pattern2{
+  @apply select-none absolute bottom-0  -right-1/4 sm:right-0 rotate-45 z-[1] h-[14rem] w-[14rem] sm:h-[20rem] sm:w-[15rem] rounded-3xl bg-primary3  dark:bg-secondary3 flex items-center justify-center text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary3;
+}
+
+.bg_pattern3{
+  @apply select-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  rotate-45 z-[1] h-[20rem] w-[25rem] rounded-3xl bg-primary3  dark:bg-secondary3 flex items-center justify-center text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary3;
+}
+
+.order_btn{
+  @apply bg-gradient-to-r from-primary dark:from-primary/85 to-secondary dark:to-secondary/85 group-hover:border group-hover:border-primary transition-all duration-300 text-light py-1 px-4 rounded-full flex items-center gap-3;
+}
+
+.order_btn2{
+  @apply bg-gradient-to-r from-primary dark:from-primary/85 to-secondary dark:to-secondary/85 group-hover:border group-hover:border-primary transition-all duration-300 text-light py-1 px-4 rounded-full flex items-center gap-3 font-semibold sm:text-xl hover:scale-105;
+}
+
+.order_btn3{
+  @apply m-auto  py-1 px-3 rounded-full hover:scale-105 text-white bg-gradient-to-r from-primary to-secondary group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-white group-hover:text-primary transition-all duration-300;
+}
+
+.view_btn{
+  @apply m-auto py-1 px-2 text-xl rounded-md shadow-sm shadow-secondary dark:shadow-light text-white bg-gradient-to-r from-primary to-secondary group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-white group-hover:text-primary transition-all duration-300;
+}
+
+.link_menu{
+  @apply inline-block p-2 font-semibold text-dark dark:text-light hover:text-primary dark:hover:text-secondary duration-200;
+}
+
+.sublink_menu{
+  @apply inline-block w-full px-4 py-2 rounded-md font-semibold text-dark hover:text-primary hover:dark:text-secondary hover:bg-primary/10 dark:hover:bg-secondary/10 dark:text-light duration-200;
+}
+
+.translate_bar{
+  @apply absolute -bottom-1 left-0 w-full h-1 rounded-full bg-light/50 overflow-hidden
+}
+
+.translate_bar::after{
+  content: "";
+  @apply absolute top-0 left-0 w-6 h-full rounded-full bg-primary;
+  animation: translate 1500ms linear infinite;
+}
+
+@keyframes translate {
+  from{
+    left: 0;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.rotate{
+  animation: rotate 1000ms linear infinite;
+}
+
+@keyframes rotate {
+  0%, 50%, 100%{
+    rotate: 0deg;
+  }
+
+  25%{
+    rotate: -15deg;
+  }
+
+  75%{
+    rotate: 15deg;
+  }
+}
+
+.trans{
+  animation: topdown 1000ms ease-out infinite;
+}
+
+@keyframes topdown {
+  0%,100%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-4px);
+  }
+}

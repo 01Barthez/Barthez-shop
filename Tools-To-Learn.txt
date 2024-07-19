@@ -1,0 +1,5 @@
+learn configuration in tailwind-config.js, tools like "container", "darkMode", and others tools;  
+learn again how to use and to manage react slider with "react-slick & slick-carousel";
+learn again how to use "AOS library" in react;
+
+learn about pngwing
